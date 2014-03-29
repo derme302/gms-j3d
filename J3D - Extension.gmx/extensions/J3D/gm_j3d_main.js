@@ -18,7 +18,16 @@ function j3d_scene_create_perspective() {
 	
 	scene = new THREE.Scene();
 
-	camera = new THREE.PerspectiveCamera(75, ASPECT, 0.1, 1000);
+	camera = new THREE.PerspectiveCamera(75, ASPECT, 0.1, 10000);
+	
+	var animate = function () {
+		// note: three.js includes requestAnimationFrame shim
+		// Animate stuff
+		requestAnimationFrame(animate);
+		renderer.render(scene, camera);
+	}
+	
+	animate();
 }
 
 function j3d_camera_update(x, y, z, xi, yi, zi) {
@@ -82,12 +91,7 @@ function j3d_light_define_point(x,y,z) {
 }
 
 function j3d_render() {
-	var render = function () {
-		requestAnimationFrame(render);
-		renderer.render(scene, camera);
-	};
-
-	render();
+	
 }
 
 function j32_scene_remove(id) {

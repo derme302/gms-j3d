@@ -69,10 +69,10 @@ THE SOFTWARE.</license>
           </args>
         </function>
         <function>
-          <name>j3d_render</name>
-          <externalName>j3d_render</externalName>
+          <name>j3d_animate</name>
+          <externalName>j3d_animate</externalName>
           <kind>11</kind>
-          <help>j3d_render(model_name)</help>
+          <help>j3d_animate(scene, camera)</help>
           <returnType>2</returnType>
           <argCount>0</argCount>
           <args/>
@@ -173,6 +173,39 @@ THE SOFTWARE.</license>
           <args>
             <arg>2</arg>
           </args>
+        </function>
+      </functions>
+      <constants/>
+    </file>
+    <file>
+      <filename>j3d_main.js</filename>
+      <origname>extensions\j3d_main.js</origname>
+      <init></init>
+      <final></final>
+      <kind>5</kind>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>49385710</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <functions>
+        <function>
+          <name>j3d_init</name>
+          <externalName>j3d_init</externalName>
+          <kind>11</kind>
+          <help>j3d_init()</help>
+          <returnType>2</returnType>
+          <argCount>0</argCount>
+          <args/>
+        </function>
+        <function>
+          <name>j3d_animate</name>
+          <externalName>j3d_animate</externalName>
+          <kind>11</kind>
+          <help>j3d_animate()</help>
+          <returnType>2</returnType>
+          <argCount>0</argCount>
+          <args/>
         </function>
       </functions>
       <constants/>
