@@ -28,6 +28,8 @@
             <string>global.scene = j3d_scene_create();
 global.camera = j3d_camera_perspective_create();
 global.renderer = j3d_renderer_create();
+
+_id = j3d_create_block(0, 0, 0, 2000, 2000, 2000, c_blue, global.scene);
 </string>
           </argument>
         </arguments>
@@ -50,7 +52,7 @@ global.renderer = j3d_renderer_create();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>j3d_render(global.renderer, global.scene, global.renderer);
+            <string>j3d_render(global.renderer, global.scene, global.camera);
 </string>
           </argument>
         </arguments>

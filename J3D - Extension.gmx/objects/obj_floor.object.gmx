@@ -25,9 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>_id = j3d_model_get_ind();
-var z = -0.5;
-j3d_create_block(_id,x,y,z,32,32,1,c_green);
+            <string>var z = -0.5;
+_id = j3d_create_block(x,y,z,32,32,1,c_green,global.scene);
 </string>
           </argument>
         </arguments>

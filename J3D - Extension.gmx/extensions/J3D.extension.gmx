@@ -81,6 +81,55 @@ THE SOFTWARE.</license>
           <argCount>0</argCount>
           <args/>
         </function>
+        <function>
+          <name>j3d_create_block</name>
+          <externalName>j3d_create_block</externalName>
+          <kind>11</kind>
+          <help>j3d_create_block(x, y, z, xl, yl, zl, col, scene)</help>
+          <returnType>2</returnType>
+          <argCount>8</argCount>
+          <args>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+          </args>
+        </function>
+        <function>
+          <name>j3d_model_rotation_add</name>
+          <externalName>j3d_model_rotation_add</externalName>
+          <kind>11</kind>
+          <help>j3d_model_rotation_add()</help>
+          <returnType>2</returnType>
+          <argCount>4</argCount>
+          <args>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+          </args>
+        </function>
+        <function>
+          <name>j3d_camera_update</name>
+          <externalName>j3d_camera_update</externalName>
+          <kind>11</kind>
+          <help>j3d_camera_update(x, y, z, xi, yi, zi, camera)</help>
+          <returnType>2</returnType>
+          <argCount>7</argCount>
+          <args>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+          </args>
+        </function>
       </functions>
       <constants/>
     </file>
@@ -100,10 +149,11 @@ THE SOFTWARE.</license>
           <name>j3d_light_define_point</name>
           <externalName>j3d_light_define_point</externalName>
           <kind>11</kind>
-          <help>j3d_light_define_point(x,y,z)</help>
+          <help>j3d_light_define_point(x,y,z,scene)</help>
           <returnType>2</returnType>
-          <argCount>3</argCount>
+          <argCount>4</argCount>
           <args>
+            <arg>2</arg>
             <arg>2</arg>
             <arg>2</arg>
             <arg>2</arg>
@@ -128,28 +178,11 @@ THE SOFTWARE.</license>
           <name>j3d_create_block</name>
           <externalName>j3d_create_block</externalName>
           <kind>11</kind>
-          <help>j3d_create_block(obj, x, y, z, xl, yl, zl, col) </help>
+          <help>j3d_create_block(x, y, z, xl, yl, zl, col, scene)</help>
           <returnType>2</returnType>
           <argCount>8</argCount>
           <args>
             <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>1</arg>
-          </args>
-        </function>
-        <function>
-          <name>j3d_create_sphere</name>
-          <externalName>j3d_create_sphere</externalName>
-          <kind>11</kind>
-          <help>j3d_create_sphere(obj, x, y, z, r, seg, rings)</help>
-          <returnType>2</returnType>
-          <argCount>7</argCount>
-          <args>
             <arg>2</arg>
             <arg>2</arg>
             <arg>2</arg>
@@ -164,20 +197,6 @@ THE SOFTWARE.</license>
           <externalName>j3d_model_rotation_add</externalName>
           <kind>11</kind>
           <help>j3d_model_rotation_add(obj,xi,yi,zi)</help>
-          <returnType>2</returnType>
-          <argCount>4</argCount>
-          <args>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-          </args>
-        </function>
-        <function>
-          <name>j3d_model_translation_set</name>
-          <externalName>j3d_model_translation_set</externalName>
-          <kind>11</kind>
-          <help>j3d_model_translation_set(obj, xt, yt, zt)</help>
           <returnType>2</returnType>
           <argCount>4</argCount>
           <args>
