@@ -56,7 +56,7 @@ if (keyboard_check(vk_down)) then speed = -1;
 
 image_angle = direction;
 
-j3d_camera_update(x,y,z,-pi/2,((direction-90) * pi / 180),pi);
+//j3d_camera_update(x,y,z,-pi/2,((direction-90) * pi / 180),pi);
 </string>
           </argument>
         </arguments>

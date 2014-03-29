@@ -1,5 +1,5 @@
 // J3D MOD LIGHTS
-function j3d_light_define_point(x,y,z) {
+function j3d_light_define_point(x,y,z,scene) {
 	// create a point light
 	var light = new THREE.PointLight(0xFFFFFF);
 
@@ -9,5 +9,11 @@ function j3d_light_define_point(x,y,z) {
 	light.position.z = z;
 
 	// add to the scene
-	scene.add(light);
+	arr_scenes[scene].add(light);
+	
+	// Update the array
+	arr_lights[arr_lights_ind] = light;
+	
+	arr_lights_ind += 1;
+	return arr_lights_ind - 1;
 }

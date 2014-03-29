@@ -1,34 +1,49 @@
-var camera, scene, renderer;
-var geometry, material, mesh;
+// J3D MAIN
 
-function j3d_init() {
+var arr_scenes = new Array();
+var arr_scenes_ind = 0;
+var arr_renderers = new Array();
+var arr_renderers_ind = 0;
+var arr_cameras = new Array();
+var arr_cameras_ind = 0;
+var arr_models = new Array();
+var arr_models_ind = 0;
+var arr_lights = new Array();
+var arr_lights_ind = 0;
 
-	camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
-	camera.position.z = 1000;
 
-	scene = new THREE.Scene();
-
-	geometry = new THREE.BoxGeometry( 200, 200, 200 );
-	material = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe: true } );
-
-	mesh = new THREE.Mesh( geometry, material );
-	scene.add( mesh );
-
-	renderer = new THREE.CanvasRenderer();
-	renderer.setSize( window.innerWidth, window.innerHeight );
-
-	document.body.appendChild( renderer.domElement );
-
+function j3d_scene_create() {
+	arr_scenes[arr_scenes_ind] = new THREE.Scene();
+	
+	arr_scenes_ind += 1;
+	return arr_scenes_ind - 1;
 }
 
-function j3d_render() {
+function j3d_camera_perspective_create() {
+	arr_cameras[arr_cameras_ind] = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+	arr_cameras[arr_cameras_ind].position.z = 1000;
+	
+	arr_cameras_ind += 1;
+	return arr_cameras - 1;
+}
 
-	// note: three.js includes requestAnimationFrame shim
-	//requestAnimationFrame( j3d_animate ); This is the old way
+function j3d_renderer_create() {
+	var $container = $('#container'); // get the DOM element to attach to
 
-	// For testing
-	mesh.rotation.x += 0.01;
-	mesh.rotation.y += 0.02;
+	arr_renderers[arr_renderers_ind] = new THREE.WebGLRenderer();
+	arr_renderers[arr_renderers_ind].setSize( window.innerWidth, window.innerHeight );
 
-	renderer.render( scene, camera );
+	//document.body.appendChild( renderer.domElement );
+	
+	//renderer = new THREE.WebGLRenderer();
+	//renderer.setSize(WIDTH, HEIGHT);
+	
+	$container.append(arr_renderers[arr_renderers_ind].domElement); // attach the render-supplied DOM element
+	
+	arr_renderers_ind += 1;
+	return arr_renderers_ind - 1;
+}
+
+function j3d_render(renderer, scene, camera) {
+	arr_renderers[renderer].render( arr_scenes[scene], arr_cameras[camera] );
 }

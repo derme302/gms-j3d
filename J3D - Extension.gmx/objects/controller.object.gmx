@@ -28,8 +28,8 @@
             <string>///Setup
 global.model_ind = 0;
 
-j3d_start(640,480);
-j3d_scene_create_perspective();
+//j3d_start(640,480);
+//j3d_scene_create_perspective();
 </string>
           </argument>
         </arguments>

@@ -42,10 +42,10 @@ THE SOFTWARE.</license>
       </ConfigOptions>
       <functions>
         <function>
-          <name>j3d_start</name>
-          <externalName>j3d_start</externalName>
+          <name>j3d_camera_perspective_create</name>
+          <externalName>j3d_camera_perspective_create</externalName>
           <kind>11</kind>
-          <help>j3d_start()</help>
+          <help>j3d_camera_perspective_create()</help>
           <returnType>2</returnType>
           <argCount>0</argCount>
           <args/>
@@ -54,7 +54,29 @@ THE SOFTWARE.</license>
           <name>j3d_render</name>
           <externalName>j3d_render</externalName>
           <kind>11</kind>
-          <help>j3d_render(scene, camera)</help>
+          <help>j3d_render(renderer, scene, camera)</help>
+          <returnType>2</returnType>
+          <argCount>3</argCount>
+          <args>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+          </args>
+        </function>
+        <function>
+          <name>j3d_scene_create</name>
+          <externalName>j3d_scene_create</externalName>
+          <kind>11</kind>
+          <help>j3d_scene_create()</help>
+          <returnType>2</returnType>
+          <argCount>0</argCount>
+          <args/>
+        </function>
+        <function>
+          <name>j3d_renderer_create</name>
+          <externalName>j3d_renderer_create</externalName>
+          <kind>11</kind>
+          <help>j3d_renderer_create()</help>
           <returnType>2</returnType>
           <argCount>0</argCount>
           <args/>
@@ -82,6 +104,84 @@ THE SOFTWARE.</license>
           <returnType>2</returnType>
           <argCount>3</argCount>
           <args>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+          </args>
+        </function>
+      </functions>
+      <constants/>
+    </file>
+    <file>
+      <filename>j3d_mod_shapes.js</filename>
+      <origname>extensions\j3d_mod_shapes.js</origname>
+      <init></init>
+      <final></final>
+      <kind>5</kind>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>49385710</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <functions>
+        <function>
+          <name>j3d_create_block</name>
+          <externalName>j3d_create_block</externalName>
+          <kind>11</kind>
+          <help>j3d_create_block(obj, x, y, z, xl, yl, zl, col) </help>
+          <returnType>2</returnType>
+          <argCount>8</argCount>
+          <args>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>1</arg>
+          </args>
+        </function>
+        <function>
+          <name>j3d_create_sphere</name>
+          <externalName>j3d_create_sphere</externalName>
+          <kind>11</kind>
+          <help>j3d_create_sphere(obj, x, y, z, r, seg, rings)</help>
+          <returnType>2</returnType>
+          <argCount>7</argCount>
+          <args>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+          </args>
+        </function>
+        <function>
+          <name>j3d_model_rotation_add</name>
+          <externalName>j3d_model_rotation_add</externalName>
+          <kind>11</kind>
+          <help>j3d_model_rotation_add(obj,xi,yi,zi)</help>
+          <returnType>2</returnType>
+          <argCount>4</argCount>
+          <args>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+          </args>
+        </function>
+        <function>
+          <name>j3d_model_translation_set</name>
+          <externalName>j3d_model_translation_set</externalName>
+          <kind>11</kind>
+          <help>j3d_model_translation_set(obj, xt, yt, zt)</help>
+          <returnType>2</returnType>
+          <argCount>4</argCount>
+          <args>
+            <arg>2</arg>
             <arg>2</arg>
             <arg>2</arg>
             <arg>2</arg>
