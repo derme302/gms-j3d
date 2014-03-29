@@ -30,154 +30,6 @@ THE SOFTWARE.</license>
   <installdir></installdir>
   <files>
     <file>
-      <filename>gm_j3d_main.js</filename>
-      <origname>extensions\gm_j3d_main.js</origname>
-      <init></init>
-      <final></final>
-      <kind>5</kind>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>32800</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <functions>
-        <function>
-          <name>j3d_scene_create_perspective</name>
-          <externalName>j3d_scene_create_perspective</externalName>
-          <kind>11</kind>
-          <help>j3d_scene_create_perspective()</help>
-          <returnType>2</returnType>
-          <argCount>0</argCount>
-          <args/>
-        </function>
-        <function>
-          <name>j3d_create_block</name>
-          <externalName>j3d_create_block</externalName>
-          <kind>11</kind>
-          <help>j3d_create_block(obj, x, y, z, xl, yl, zl, col)</help>
-          <returnType>2</returnType>
-          <argCount>8</argCount>
-          <args>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>1</arg>
-          </args>
-        </function>
-        <function>
-          <name>j3d_animate</name>
-          <externalName>j3d_animate</externalName>
-          <kind>11</kind>
-          <help>j3d_animate(scene, camera)</help>
-          <returnType>2</returnType>
-          <argCount>0</argCount>
-          <args/>
-        </function>
-        <function>
-          <name>j3d_model_rotation_add</name>
-          <externalName>j3d_model_rotation_add</externalName>
-          <kind>11</kind>
-          <help>j3d_model_rotation_add(obj,xi,yi,zi)</help>
-          <returnType>2</returnType>
-          <argCount>4</argCount>
-          <args>
-            <arg>1</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-          </args>
-        </function>
-        <function>
-          <name>j3d_light_define_point</name>
-          <externalName>j3d_light_define_point</externalName>
-          <kind>11</kind>
-          <help>j3d_light_define_point(x,y,z)</help>
-          <returnType>2</returnType>
-          <argCount>3</argCount>
-          <args>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-          </args>
-        </function>
-        <function>
-          <name>j3d_start</name>
-          <externalName>j3d_start</externalName>
-          <kind>11</kind>
-          <help>j3d_start(scene_width,scene_height)</help>
-          <returnType>2</returnType>
-          <argCount>2</argCount>
-          <args>
-            <arg>2</arg>
-            <arg>2</arg>
-          </args>
-        </function>
-        <function>
-          <name>j3d_create_sphere</name>
-          <externalName>j3d_create_sphere</externalName>
-          <kind>11</kind>
-          <help>j3d_create_sphere(obj, x, y, z, r, seg, rings)</help>
-          <returnType>2</returnType>
-          <argCount>7</argCount>
-          <args>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-          </args>
-        </function>
-        <function>
-          <name>j3d_model_translation_set</name>
-          <externalName>j3d_model_translation_set</externalName>
-          <kind>11</kind>
-          <help>j3d_model_translation_set(obj, xt, yt, zt) </help>
-          <returnType>2</returnType>
-          <argCount>4</argCount>
-          <args>
-            <arg>1</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-          </args>
-        </function>
-        <function>
-          <name>j3d_camera_update</name>
-          <externalName>j3d_camera_update</externalName>
-          <kind>11</kind>
-          <help>j3d_camera_update(x, y, z, xi, yi, zi)</help>
-          <returnType>2</returnType>
-          <argCount>6</argCount>
-          <args>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-          </args>
-        </function>
-        <function>
-          <name>j3d_scene_remove</name>
-          <externalName>j3d_scene_remove</externalName>
-          <kind>11</kind>
-          <help>j3d_scene_remove(id)</help>
-          <returnType>2</returnType>
-          <argCount>1</argCount>
-          <args>
-            <arg>2</arg>
-          </args>
-        </function>
-      </functions>
-      <constants/>
-    </file>
-    <file>
       <filename>j3d_main.js</filename>
       <origname>extensions\j3d_main.js</origname>
       <init></init>
@@ -190,22 +42,50 @@ THE SOFTWARE.</license>
       </ConfigOptions>
       <functions>
         <function>
-          <name>j3d_init</name>
-          <externalName>j3d_init</externalName>
+          <name>j3d_start</name>
+          <externalName>j3d_start</externalName>
           <kind>11</kind>
-          <help>j3d_init()</help>
+          <help>j3d_start()</help>
           <returnType>2</returnType>
           <argCount>0</argCount>
           <args/>
         </function>
         <function>
-          <name>j3d_animate</name>
-          <externalName>j3d_animate</externalName>
+          <name>j3d_render</name>
+          <externalName>j3d_render</externalName>
           <kind>11</kind>
-          <help>j3d_animate()</help>
+          <help>j3d_render(scene, camera)</help>
           <returnType>2</returnType>
           <argCount>0</argCount>
           <args/>
+        </function>
+      </functions>
+      <constants/>
+    </file>
+    <file>
+      <filename>j3d_mod_lights.js</filename>
+      <origname>extensions\j3d_mod_lights.js</origname>
+      <init></init>
+      <final></final>
+      <kind>5</kind>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>49385710</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <functions>
+        <function>
+          <name>j3d_light_define_point</name>
+          <externalName>j3d_light_define_point</externalName>
+          <kind>11</kind>
+          <help>j3d_light_define_point(x,y,z)</help>
+          <returnType>2</returnType>
+          <argCount>3</argCount>
+          <args>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+          </args>
         </function>
       </functions>
       <constants/>

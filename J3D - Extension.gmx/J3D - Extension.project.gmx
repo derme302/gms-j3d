@@ -80,6 +80,7 @@
     <object>objects\obj_sky</object>
     <object>objects\obj_spin</object>
     <object>objects\obj_light</object>
+    <object>objects\obj_test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test</room>

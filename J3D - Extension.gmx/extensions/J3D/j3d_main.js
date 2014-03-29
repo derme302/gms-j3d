@@ -1,9 +1,6 @@
 var camera, scene, renderer;
 var geometry, material, mesh;
 
-j3d_init();
-j3d_animate();
-
 function j3d_init() {
 
 	camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
@@ -24,14 +21,14 @@ function j3d_init() {
 
 }
 
-function j3d_animate() {
+function j3d_render() {
 
 	// note: three.js includes requestAnimationFrame shim
-	requestAnimationFrame( j3d_animate );
+	//requestAnimationFrame( j3d_animate ); This is the old way
 
+	// For testing
 	mesh.rotation.x += 0.01;
 	mesh.rotation.y += 0.02;
 
 	renderer.render( scene, camera );
-
 }
