@@ -1,4 +1,4 @@
-j3d
+J3D
 ===
 
-JavaScript 3D
+A Three JS Extension for GameMaker
