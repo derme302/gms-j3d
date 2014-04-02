@@ -76,10 +76,12 @@ THE SOFTWARE.</license>
           <name>j3d_renderer_create</name>
           <externalName>j3d_renderer_create</externalName>
           <kind>11</kind>
-          <help>j3d_renderer_create()</help>
+          <help>j3d_renderer_create(type)</help>
           <returnType>2</returnType>
-          <argCount>0</argCount>
-          <args/>
+          <argCount>1</argCount>
+          <args>
+            <arg>2</arg>
+          </args>
         </function>
         <function>
           <name>j3d_create_block</name>
@@ -131,7 +133,16 @@ THE SOFTWARE.</license>
           </args>
         </function>
       </functions>
-      <constants/>
+      <constants>
+        <constant>
+          <name>RENDERER_CANVAS</name>
+          <value>0</value>
+        </constant>
+        <constant>
+          <name>RENDERER_WEBGL</name>
+          <value>1</value>
+        </constant>
+      </constants>
     </file>
     <file>
       <filename>j3d_mod_lights.js</filename>

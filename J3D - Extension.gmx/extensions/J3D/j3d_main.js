@@ -39,10 +39,15 @@ function j3d_camera_update(x, y, z, xi, yi, zi, camera) {
 	cam.rotation.z = zi;
 }
 
-function j3d_renderer_create() {
+function j3d_renderer_create(type) {
 	var $container = $('#container'); // get the DOM element to attach to
 
-	arr_renderers[arr_renderers_ind] = new THREE.WebGLRenderer( {alpha: true} );
+	if (type == 0) {
+		arr_renderers[arr_renderers_ind] = new THREE.CanvasRenderer( {alpha: true} );
+	}
+	else {
+		arr_renderers[arr_renderers_ind] = new THREE.WebGLRenderer( {alpha: true} );
+	}
 	arr_renderers[arr_renderers_ind].setSize(640 , 480 );
 
 	//document.body.appendChild( renderer.domElement );
