@@ -84,38 +84,6 @@ THE SOFTWARE.</license>
           </args>
         </function>
         <function>
-          <name>j3d_create_block</name>
-          <externalName>j3d_create_block</externalName>
-          <kind>11</kind>
-          <help>j3d_create_block(x, y, z, xl, yl, zl, col, scene)</help>
-          <returnType>2</returnType>
-          <argCount>8</argCount>
-          <args>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-          </args>
-        </function>
-        <function>
-          <name>j3d_model_rotation_add</name>
-          <externalName>j3d_model_rotation_add</externalName>
-          <kind>11</kind>
-          <help>j3d_model_rotation_add()</help>
-          <returnType>2</returnType>
-          <argCount>4</argCount>
-          <args>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-            <arg>2</arg>
-          </args>
-        </function>
-        <function>
           <name>j3d_camera_update</name>
           <externalName>j3d_camera_update</externalName>
           <kind>11</kind>
@@ -211,6 +179,38 @@ THE SOFTWARE.</license>
           <returnType>2</returnType>
           <argCount>4</argCount>
           <args>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+          </args>
+        </function>
+        <function>
+          <name>j3d_create_sphere</name>
+          <externalName>j3d_create_sphere</externalName>
+          <kind>11</kind>
+          <help>j3d_create_sphere(x, y, z, r, seg, rings, scene)</help>
+          <returnType>2</returnType>
+          <argCount>7</argCount>
+          <args>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+            <arg>2</arg>
+          </args>
+        </function>
+        <function>
+          <name>j3d_model_translation_set</name>
+          <externalName>j3d_model_translation_set</externalName>
+          <kind>11</kind>
+          <help>j3d_model_translation_set(obj, xt, yt, zt,scene)</help>
+          <returnType>2</returnType>
+          <argCount>5</argCount>
+          <args>
+            <arg>2</arg>
             <arg>2</arg>
             <arg>2</arg>
             <arg>2</arg>

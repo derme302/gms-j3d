@@ -18,9 +18,9 @@ function j3d_create_block(x, y, z, xl, yl, zl, col, scene) {
 	return arr_models_ind - 1;
 }
 
-function j3d_create_sphere(obj, x, y, z, r, seg, rings, scene) {
+function j3d_create_sphere(x, y, z, r, seg, rings, scene) {
 	var geometry = new THREE.SphereGeometry(r, seg, rings);
-	var material = new THREE.MeshLambertMaterial({ color: 0xCC0000 });
+	var material = new THREE.MeshLambertMaterial({ color: 0xFFFFFF });
 	
 	arr_models[arr_models_ind] = new THREE.Mesh(geometry, material);
 	var model = arr_models[arr_models_ind];

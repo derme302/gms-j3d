@@ -67,6 +67,7 @@
     <sprite>sprites\spr_sky</sprite>
     <sprite>sprites\spr_spin</sprite>
     <sprite>sprites\spr_light</sprite>
+    <sprite>sprites\spr_cloud</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -75,6 +76,7 @@
     <object>objects\obj_player</object>
     <object>objects\obj_floor</object>
     <object>objects\obj_sky</object>
+    <object>objects\obj_cloud</object>
     <object>objects\obj_spin</object>
     <object>objects\obj_light</object>
   </objects>
