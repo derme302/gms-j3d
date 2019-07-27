@@ -1,6 +1,12 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
+# LFS
+'*.ico' filter=lfs diff=lfs merge=lfs -text
+'*.png' filter=lfs diff=lfs merge=lfs -text
+'*.jpg' filter=lfs diff=lfs merge=lfs -text
+'*.gif' filter=lfs diff=lfs merge=lfs -text
+
 # Custom for Visual Studio
 *.cs     diff=csharp
 *.sln    merge=union
