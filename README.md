@@ -17,7 +17,7 @@ One of the best features right now is the ability to use GameMaker's room editor
 ![J3D GameMaker Room Editor](http://4.bp.blogspot.com/-_cCy_Oko8YU/UY2quOsgLoI/AAAAAAAAACo/KdfcLMjywrQ/s1600/Screen+Shot+2013-05-10+at+11.02.07+PM.png)
 
 ### Authors and Contributors
-At the moment the project is just maintained by me (@derme302), but if you would like to contribute feel free to do so!
+At the moment the project is just maintained by me ([@derme302](https://twitter.com/derme302)), but if you would like to contribute feel free to do so!
 
 ### Support or Contact
 Having trouble with J3D? Either try the [thread on the GameMaker Community](http://gmc.yoyogames.com/index.php?showtopic=580931) or hit me up on [Twitter](https://twitter.com/derme302).
