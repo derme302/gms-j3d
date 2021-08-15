@@ -89,6 +89,19 @@
       ],"constants":[],"ProxyFiles":[],"copyToTargets":49385710,"order":[
         {"name":"j3d_create_block","path":"extensions/J3D/J3D.yy",},
         {"name":"j3d_model_rotation_add","path":"extensions/J3D/J3D.yy",},
+        {"name":"j3d_create_block","path":"extensions/J3D/J3D.yy",},
+        {"name":"j3d_model_rotation_add","path":"extensions/J3D/J3D.yy",},
+      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
+    {"filename":"j3d_mod_models.js","origname":"","init":"","final":"","kind":5,"uncompress":false,"functions":[
+        {"externalName":"j3d_create_model_gltf","kind":5,"help":"j3d_create_model_gltf(x, y, z, url, scene)","hidden":false,"returnType":1,"argCount":0,"args":[
+            2,
+            2,
+            2,
+            1,
+            2,
+          ],"resourceVersion":"1.0","name":"j3d_create_model_gltf","tags":[],"resourceType":"GMExtensionFunction",},
+      ],"constants":[],"ProxyFiles":[],"copyToTargets":-1,"order":[
+        {"name":"j3d_create_model_gltf","path":"extensions/J3D/J3D.yy",},
       ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
   ],
   "classname": "",
@@ -115,7 +128,7 @@
   "tvosThirdPartyFrameworkEntries": [],
   "IncludedResources": [],
   "androidPermissions": [],
-  "copyToTargets": 32,
+  "copyToTargets": 36,
   "iosCocoaPods": "",
   "tvosCocoaPods": "",
   "iosCocoaPodDependencies": "",
